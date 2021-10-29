@@ -89,7 +89,7 @@ public class PredicateExample {
         Predicate<Emp> salGrtr5k = e ->e.salary <5000;
         Predicate<Emp> nameGrtr4Char = e1 -> e1.name.length() > 3;
 
-         emps.stream().sorted(Comparator.comparingInt(Emp::getAddress))
+//         emps.stream().sorted(Comparator.comparingInt(Emp::getName))
         for(Emp emp : emps) {
 
             if(salGrtr5k.test(emp)) {
